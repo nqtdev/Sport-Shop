@@ -1,3 +1,240 @@
-h1 {
-  color: rebeccapurple;
+@import "./variable.scss";
+.footer__top {
+  height: max-content;
+  background: #222222;
+  .container {
+    width: 75%;
+    margin: auto;
+    padding: 25px 0px;
+  }
+}
+.ftcolum__text {
+  h4 {
+    color: #fff;
+    font-style: 2rem;
+    font-weight: 600;
+  }
+}
+.ftcolum__item {
+  display: flex;
+  padding: 0.5rem 0rem;
+  .ftcolum__item--img {
+    img {
+      width: 60px;
+      height: 60px;
+    }
+  }
+  .ftcolum__item--text {
+    margin-left: 10px;
+    p {
+      margin-bottom: 8px;
+    }
+    .ft-text {
+      color: #fff;
+      font-size: 0.9rem;
+      font-weight: 500;
+      margin-bottom: unset;
+    }
+    .ft-number {
+      color: #fff;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+  }
+}
+.bd-bottom {
+  border-bottom: 1px solid gray;
+}
+.ftcolum__noname {
+  margin: 5px 0px;
+  width: 20%;
+  height: 3px;
+  background: gray;
+}
+.footer__bottom {
+  background: black;
+  height: max-content;
+  display: flex;
+  .container {
+    padding: 2rem 0px;
+    margin: auto;
+    justify-content: center;
+  }
+}
+.footer__bottom--card {
+  display: flex;
+  justify-content: center;
+  padding-left: unset;
+  .bottom-card__item {
+    padding: 0px 5px;
+    .size {
+      font-size: 3rem;
+      border-radius: 10%;
+      &:hover {
+        color: #989898;
+      }
+    }
+  }
+}
+.footer__bottom--tab {
+  display: flex;
+  justify-content: center;
+  padding-left: unset;
+  li {
+    text-transform: uppercase;
+    padding: 0px 5px;
+    a {
+      color: gray;
+      text-decoration: none;
+      font-weight: 500;
+      &:hover {
+        color: #dcdcdc;
+      }
+    }
+  }
+}
+.footer__bottom--contact {
+  display: flex;
+  justify-content: center;
+  p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #616161;
+  }
+  .bottom-contact__hovercolor {
+    font-size: 1rem;
+    margin-left: 4px;
+    font-weight: 500;
+    color: gray;
+    float: left;
+  }
+}
+.footer__body {
+  background: #111111;
+  height: max-content;
+  .container {
+    width: 75%;
+    margin: auto;
+    padding: 25px 0px;
+  }
+}
+.ftbody__tags {
+  padding-left: unset;
+  li {
+    margin: 2px 3px;
+    border: 1px solid #fff;
+    width: max-content;
+    border-radius: 3px;
+    float: left;
+    opacity: 0.6;
+    a {
+      text-align: center;
+      padding: 0px 7px;
+      color: gray;
+    }
+    &:hover {
+      opacity: 1;
+      border-color: #111111;
+      overflow: hidden;
+      a {
+        color: #fff;
+      }
+    }
+  }
+}
+.ftbody__social {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  padding-left: unset;
+  li {
+    border: 1px solid gray;
+    border-radius: 50%;
+    overflow: hidden;
+    background: black;
+    i {
+      font-size: 1.2rem;
+      padding: 7px;
+      color: #fff;
+    }
+  }
+  .ftbody__social--facebook {
+    &:hover {
+      background: #0000ff;
+    }
+  }
+  .ftbody__social--instagram {
+    &:hover {
+      background: #ffc0cb;
+    }
+  }
+  .ftbody__social--twitter {
+    &:hover {
+      background: #5d62ff;
+    }
+  }
+  .ftbody__social--envelope {
+    &:hover {
+      background: #c9e360;
+    }
+  }
+  .ftbody__social--pintesest {
+    &:hover {
+      background: red;
+    }
+  }
+}
+.ftbody__text {
+  color: #fff;
+  font-family: $font-page;
+  font-weight: 700;
+  line-height: 29px;
+}
+.ftbody__latest-news {
+  padding-left: unset;
+  .latest-news__item {
+    padding: 5px;
+    display: flex;
+    .latest-news__item--left {
+      border: 2px solid #fff;
+      padding: 2px 10px;
+      p {
+        text-align: center;
+        font-size: 1;
+        color: #fff;
+        font-weight: 900;
+      }
+    }
+    .latest-news__item--right {
+      padding-left: 10px;
+      p {
+        font-weight: 500;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.email-bottom {
+  width: 80%;
+  height: 52px;
+  border-radius: 30px;
+  border: unset;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.09);
+}
+.button-bottom {
+  margin-top: 20px;
+  width: 50%;
+  height: 3rem;
+  background: #008cb2;
+  border-radius: 2rem;
+  p {
+    padding-top: 0.8rem;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #fff;
+  }
 }
