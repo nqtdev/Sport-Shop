@@ -1,0 +1,26 @@
+.header {
+  padding: 20px 0px;
+  display: flex;
+}
+.header__logo {
+  img {
+    width: 200px;
+    height: 48px;
+  }
+}
+.header__element {
+  display: flex;
+  padding-left: unset;
+  width: 100%;
+}
+.header__element--item {
+  display: flex;
+  justify-content: space-around;
+  h6 {
+    text-transform: uppercase;
+  }
+  i {
+    padding-top: 2px;
+    padding-left: 5px;
+  }
+}

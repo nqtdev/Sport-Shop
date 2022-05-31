@@ -1,2 +1,14 @@
-@import "./footer.scss";
-@import "./variable.scss";
+$font-footer: "Lato", sans-serif;
+html {
+  font-size: 16px;
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+  li {
+    list-style: none;
+  }
+  p {
+    margin-bottom: unset;
+  }
+}

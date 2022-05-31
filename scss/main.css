@@ -1,0 +1,13 @@
+html {
+  font-size: 16px;
+}
+html a {
+  color: #fff;
+  text-decoration: none;
+}
+html li {
+  list-style: none;
+}
+html p {
+  margin-bottom: unset;
+}/*# sourceMappingURL=main.css.map */
