@@ -1,7 +1,3 @@
-body {
-  background-color: #1b1b1b;
-}
-
 .SliderOne__Slider {
   background-color: gray;
   background-image: url(../images/img_body/slider_img/yoga-2.jpg);
@@ -97,4 +93,119 @@ body {
 }
 .shipping__item:hover .shipping__item--img i {
   color: #fff;
+}
+
+.body__browse .container {
+  position: relative;
+  margin: auto;
+}
+.body__browse .container h4 {
+  z-index: 2;
+  background: #1b1b1b;
+  position: absolute;
+  color: #fff;
+  left: 44%;
+  top: -17px;
+  padding: 0px 20px;
+  font-weight: 600;
+}
+
+.slider-browse {
+  padding: 3rem 0rem;
+  border-top: 2px solid gray;
+  display: flex;
+}
+.slider-browse .browse__content {
+  padding: 0rem 1rem;
+}
+.slider-browse .browse__content .browse__img {
+  position: relative;
+}
+.slider-browse .browse__content .browse__img img {
+  width: 100%;
+}
+.slider-browse .browse__content .browse__text {
+  top: 40%;
+  position: absolute;
+  text-align: center;
+  margin-left: 4.5rem;
+}
+.slider-browse .browse__content .browse__text h5 {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-shadow: 1px 1px black;
+}
+.slider-browse .browse__content .browse__text p {
+  opacity: 0;
+  color: #fff;
+  text-shadow: 1px 1px black;
+}
+.slider-browse .browse__content:hover h5 {
+  transform: translateY(-5px);
+  transition: all 0.3s ease-in-out;
+}
+.slider-browse .browse__content:hover p {
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+.slider-browse button {
+  height: 75%;
+  width: 2rem;
+  background: gray;
+  border-radius: 2rem;
+}
+
+.body__latest .container {
+  position: relative;
+  margin: auto;
+}
+.body__latest .container h4 {
+  z-index: 2;
+  background: #1b1b1b;
+  position: absolute;
+  color: #fff;
+  left: 44%;
+  top: -17px;
+  padding: 0px 20px;
+  font-weight: 600;
+}
+
+.slider-latest {
+  padding: 3rem 0rem;
+  border-top: 2px solid gray;
+  display: flex;
+}
+.slider-latest .latest__img {
+  position: relative;
+}
+.slider-latest .latest__img img {
+  width: 100%;
+}
+.slider-latest .latest__text {
+  top: 40%;
+  position: absolute;
+}
+.slider-latest .latest__text h6 {
+  color: #fff;
+}
+
+.slick-prev {
+  position: absolute;
+  top: 47%;
+  left: 0;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  z-index: 10;
+}
+
+.slick-next {
+  position: absolute;
+  top: 47%;
+  right: 0;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  z-index: 10;
 }/*# sourceMappingURL=index.css.map */

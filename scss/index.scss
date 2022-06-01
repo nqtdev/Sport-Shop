@@ -1,6 +1,3 @@
-body {
-  background-color: #1b1b1b;
-}
 .SliderOne__Slider {
   background-color: gray;
   background-image: url(../images/img_body/slider_img/yoga-2.jpg);
@@ -93,4 +90,120 @@ body {
       color: #fff;
     }
   }
+}
+.body__browse {
+  .container {
+    position: relative;
+    margin: auto;
+    h4 {
+      z-index: 2;
+      background: #1b1b1b;
+      position: absolute;
+      color: #fff;
+      left: 44%;
+      top: -17px;
+      padding: 0px 20px;
+      font-weight: 600;
+    }
+  }
+}
+.slider-browse {
+  padding: 3rem 0rem;
+  border-top: 2px solid gray;
+  display: flex;
+  .browse__content {
+    padding: 0rem 1rem;
+    .browse__img {
+      position: relative;
+      img {
+        width: 100%;
+      }
+    }
+    .browse__text {
+      top: 40%;
+      position: absolute;
+      text-align: center;
+      margin-left: 4.5rem;
+      h5 {
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 700;
+        text-shadow: 1px 1px black;
+      }
+      p {
+        opacity: 0;
+        color: #fff;
+        text-shadow: 1px 1px black;
+      }
+    }
+    &:hover {
+      h5 {
+        transform: translateY(-5px);
+        transition: all 0.3s ease-in-out;
+      }
+      p {
+        opacity: 1;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  }
+  button {
+    height: 75%;
+    width: 2rem;
+    background: gray;
+    border-radius: 2rem;
+  }
+}
+
+.body__latest {
+  .container {
+    position: relative;
+    margin: auto;
+    h4 {
+      z-index: 2;
+      background: #1b1b1b;
+      position: absolute;
+      color: #fff;
+      left: 44%;
+      top: -17px;
+      padding: 0px 20px;
+      font-weight: 600;
+    }
+  }
+}
+.slider-latest {
+  padding: 3rem 0rem;
+  border-top: 2px solid gray;
+  display: flex;
+  .latest__img {
+    position: relative;
+    img {
+      width: 100%;
+    }
+  }
+  .latest__text {
+    top: 40%;
+    position: absolute;
+    h6 {
+      color: #fff;
+    }
+  }
+}
+.slick-prev {
+  position: absolute;
+  top: 47%;
+  left: 0;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  z-index: 10;
+}
+.slick-next {
+  position: absolute;
+  top: 47%;
+  right: 0;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  z-index: 10;
 }
