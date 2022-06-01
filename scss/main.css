@@ -10,4 +10,8 @@ html li {
 }
 html p {
   margin-bottom: unset;
+}
+
+.btn {
+  display: flex;
 }/*# sourceMappingURL=main.css.map */

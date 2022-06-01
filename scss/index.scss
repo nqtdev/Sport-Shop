@@ -1,9 +1,62 @@
-.sliderOne__content {
+.SliderOne__Slider {
   background-color: gray;
   background-image: url(../images/img_body/slider_img/yoga-2.jpg);
   background-size: cover;
   .container {
-    margin: unset;
-    border-radius: 3px;
+    margin: auto;
+    padding: 170px 0px;
+    text-align: center;
   }
+}
+.SliderTwo__Slider {
+  background-color: gray;
+  background-image: url(../images/img_body/slider_img/surfing-3.jpg);
+  background-size: cover;
+  .container {
+    margin: auto;
+    padding: 170px 0px;
+  }
+}
+.SliderThree__Slider {
+  background-color: gray;
+  background-image: url(../images/img_body/slider_img/yoga-4.jpg);
+  background-size: cover;
+  .container {
+    margin: auto;
+    padding: 170px 0px;
+  }
+}
+.Slider__Content {
+  color: #fff;
+  text-align: center;
+  span {
+    font-weight: 400;
+    font-size: 5rem;
+    text-overflow: 2px;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+}
+.Slider__Button {
+  border: 2px solid #fff;
+  padding: 0px 20px;
+  margin: 0px 10px;
+  p {
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+  }
+  &:hover {
+    background: #fff;
+    p {
+      color: gray;
+    }
+  }
+}
+.btn-shop {
+  justify-content: center;
+  padding-top: 2rem;
 }
