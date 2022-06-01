@@ -24,4 +24,13 @@ html h6 {
 
 .css-flex {
   display: flex;
+}
+
+.btn-0 {
+  position: absolute;
+  margin: 5px 0px;
+  width: 20%;
+  height: 3px;
+  background: gray;
+  left: 50%;
 }/*# sourceMappingURL=main.css.map */

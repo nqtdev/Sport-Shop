@@ -91,6 +91,29 @@
     }
   }
 }
+// CSS BUTTON SLICK SLIDE
+.slick-prev {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  z-index: 10;
+  opacity: 0;
+  color: #fff;
+}
+.slick-next {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  z-index: 10;
+  opacity: 0;
+  color: #fff;
+}
 .body__browse {
   .container {
     position: relative;
@@ -113,27 +136,27 @@
   display: flex;
   .browse__content {
     padding: 0rem 1rem;
+    position: relative;
     .browse__img {
-      position: relative;
       img {
         width: 100%;
+        border-radius: 0.5rem;
       }
     }
     .browse__text {
-      top: 40%;
       position: absolute;
+      top: 40%;
+      left: 32%;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
       text-align: center;
-      margin-left: 4.5rem;
       h5 {
         color: #fff;
         text-transform: uppercase;
         font-weight: 700;
-        text-shadow: 1px 1px black;
       }
       p {
         opacity: 0;
         color: #fff;
-        text-shadow: 1px 1px black;
       }
     }
     &:hover {
@@ -150,8 +173,14 @@
   button {
     height: 75%;
     width: 2rem;
-    background: gray;
+    background: rgba(0, 0, 0, 0.5);
     border-radius: 2rem;
+  }
+  &:hover .slick-next {
+    opacity: 1;
+  }
+  &:hover .slick-prev {
+    opacity: 1;
   }
 }
 
@@ -175,35 +204,83 @@
   padding: 3rem 0rem;
   border-top: 2px solid gray;
   display: flex;
-  .latest__img {
+  .latest__content {
     position: relative;
-    img {
-      width: 100%;
+    padding: 1rem;
+    .latest__img {
+      img {
+        width: 100%;
+        height: 300px;
+      }
+    }
+    .latest__text {
+      top: 30%;
+      left: 20%;
+      position: absolute;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+      h5 {
+        color: #fff;
+      }
+      p {
+        display: none;
+        color: #fff;
+        width: max-content;
+      }
+    }
+    .later__sticky {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      top: 10%;
+      background: rgb(62, 62, 238);
+      width: max-content;
+      b {
+        padding: 0px 10px;
+        color: #fff;
+        font-weight: 600;
+      }
     }
   }
-  .latest__text {
-    top: 40%;
-    position: absolute;
-    h6 {
-      color: #fff;
+  button {
+    height: 71%;
+    width: 2rem;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 2rem;
+  }
+  &:hover .slick-next {
+    opacity: 1;
+  }
+  &:hover .slick-prev {
+    opacity: 1;
+  }
+}
+
+.body__signup {
+  .signup-content {
+    filter: brightness(25%);
+    background-image: url(../images/img_body/yoga-4-1000x464.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5rem 0rem;
+    .container {
+      width: 50%;
+      margin: auto;
+      text-align: center;
+      h2 {
+        margin: 2rem 0rem;
+        color: #fff;
+        font-weight: 900;
+      }
+      p {
+        font-size: 1.3rem;
+        color: #fff;
+        font-weight: 500;
+      }
     }
   }
 }
-.slick-prev {
-  position: absolute;
-  top: 47%;
-  left: 0;
-  transform: translateY(-50%);
-  background: transparent;
-  border: none;
-  z-index: 10;
-}
-.slick-next {
-  position: absolute;
-  top: 47%;
-  right: 0;
-  transform: translateY(-50%);
-  background: transparent;
-  border: none;
-  z-index: 10;
+.bg-fill {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }

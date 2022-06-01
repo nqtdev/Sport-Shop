@@ -1,3 +1,4 @@
+// SLICK SLIDER MAIN PAGES
 $(document).ready(function () {
   $(".slider-product").slick({
     infinite: true,
@@ -7,33 +8,88 @@ $(document).ready(function () {
   });
 });
 
-infinite: true,
-  $(document).ready(function () {
-    $(".modal-content__img").slick({
-      dots: true,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-    });
-  });
-
 $(document).ready(function () {
   $(".slider-browse").slick({
     infinite: true,
-    // dots: true,
     slidesToShow: 5,
     slidesToScroll: 3,
     prevArrow:
       "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
     nextArrow:
       "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+    responsive: [
+      {
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 400,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+    ],
   });
 });
 
 $(document).ready(function () {
   $(".slider-latest").slick({
     infinite: true,
-    // dots: true,
     slidesToShow: 4,
     slidesToScroll: 4,
+    prevArrow:
+      "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+    nextArrow:
+      "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+
+    responsive: [
+      {
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 400,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+    ],
+  });
+});
+
+$(document).ready(function () {
+  $(".modal-content__img").slick({
+    infinite: true,
+    dots: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    // responsive: [
+    //   {
+    //     breakpoint: 1025,
+    //     settings: {
+    //       slidesToShow: 3,
+    //       slidesToScroll: 3,
+    //       infinite: true,
+    //       dots: true,
+    //     },
+    //   },
+    //   {
+    //     breakpoint: 400,
+    //     settings: {
+    //       slidesToShow: 2,
+    //       slidesToScroll: 2,
+    //     },
+    //   },
+    // ],
   });
 });
