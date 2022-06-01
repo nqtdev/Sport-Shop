@@ -1,3 +1,6 @@
+body {
+  background-color: #1b1b1b;
+}
 .SliderOne__Slider {
   background-color: gray;
   background-image: url(../images/img_body/slider_img/yoga-2.jpg);
@@ -59,4 +62,35 @@
 .btn-shop {
   justify-content: center;
   padding-top: 2rem;
+}
+.body__shipping {
+  .container {
+    margin: auto;
+    padding: 30px 0px;
+  }
+}
+.shipping__item {
+  &--img {
+    color: gray;
+    border: 1px solid gray;
+    border-radius: 50%;
+    i {
+      font-size: 1.5rem;
+      padding: 0.5rem;
+    }
+  }
+  &--text {
+    margin-left: 0.5rem;
+    span {
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+  }
+  &:hover &--img {
+    background: #787878;
+    i {
+      color: #fff;
+    }
+  }
 }
