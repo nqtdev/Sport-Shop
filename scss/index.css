@@ -1,3 +1,40 @@
+html {
+  font-size: 16px;
+}
+html a {
+  color: #fff;
+  text-decoration: none;
+}
+html li {
+  list-style: none;
+}
+html p,
+html h1,
+html h2,
+html h3,
+html h4,
+html h5,
+html h6 {
+  margin-bottom: unset;
+}
+
+.css-flex {
+  display: flex;
+}
+
+.btn-0 {
+  position: absolute;
+  margin: 5px 0px;
+  width: 20%;
+  height: 3px;
+  background: gray;
+  left: 50%;
+}
+
+body {
+  background-color: #1b1b1b;
+}
+
 .SliderOne__Slider {
   background-color: gray;
   background-image: url(../images/img_body/slider_img/yoga-2.jpg);
@@ -98,25 +135,27 @@
 .slick-prev {
   position: absolute;
   top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  background: transparent;
+  left: 5%;
   border: none;
   z-index: 10;
-  opacity: 0;
   color: #fff;
+  transform: translateY(-50%);
+  background: transparent;
+  opacity: 0;
+  left: 0;
 }
 
 .slick-next {
   position: absolute;
   top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-  background: transparent;
+  right: 5%;
   border: none;
   z-index: 10;
-  opacity: 0;
   color: #fff;
+  transform: translateY(-50%);
+  background: transparent;
+  opacity: 0;
+  right: 0;
 }
 
 .body__browse .container {
@@ -171,17 +210,20 @@
   opacity: 1;
   transition: all 0.3s ease-in-out;
 }
-.slider-browse button {
-  height: 75%;
-  width: 2rem;
-  background: rgba(0, 0, 0, 0.5);
-  border-radius: 2rem;
-}
 .slider-browse:hover .slick-next {
   opacity: 1;
 }
 .slider-browse:hover .slick-prev {
   opacity: 1;
+}
+.slider-browse button {
+  height: 75%;
+  width: 2rem;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 2rem;
+}
+.slider-browse button:hover {
+  color: #2cccff;
 }
 
 .body__latest .container {
@@ -198,6 +240,15 @@
   padding: 0px 20px;
   font-weight: 600;
 }
+.body__latest button {
+  height: 75%;
+  width: 2rem;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 2rem;
+}
+.body__latest button:hover {
+  color: #2cccff;
+}
 
 .slider-latest {
   padding: 3rem 0rem;
@@ -207,6 +258,9 @@
 .slider-latest .latest__content {
   position: relative;
   padding: 1rem;
+}
+.slider-latest .latest__content .latest__img {
+  filter: brightness(80%);
 }
 .slider-latest .latest__content .latest__img img {
   width: 100%;
@@ -243,12 +297,6 @@
   color: #fff;
   font-weight: 600;
 }
-.slider-latest button {
-  height: 71%;
-  width: 2rem;
-  background: rgba(0, 0, 0, 0.5);
-  border-radius: 2rem;
-}
 .slider-latest:hover .slick-next {
   opacity: 1;
 }
@@ -261,26 +309,84 @@
   background-image: url(../images/img_body/yoga-4-1000x464.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 5rem 0rem;
+  padding: 16rem 0rem;
 }
 .body__signup .signup-content .container {
   width: 50%;
   margin: auto;
   text-align: center;
 }
-.body__signup .signup-content .container h2 {
+.body__signup .signup-content .container .caption h2 {
   margin: 2rem 0rem;
   color: #fff;
   font-weight: 900;
 }
-.body__signup .signup-content .container p {
+.body__signup .signup-content .container .caption p {
   font-size: 1.3rem;
   color: #fff;
   font-weight: 500;
 }
+.body__signup .signup-content .container .form {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.body__signup .signup-content .container .form input {
+  width: 60%;
+  border: unset;
+  height: 2.5rem;
+  border-radius: 2rem;
+}
+.body__signup .signup-content .container .form input ::-moz-placeholder {
+  color: red;
+}
+.body__signup .signup-content .container .form .btn-email {
+  margin-left: 1rem;
+  width: 140px;
+  height: 45px;
+  background: rgb(12, 169, 231);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-.bg-fill {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+.sliderTwo button {
+  height: 75%;
+  width: 2rem;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 2rem;
+  background: transparent;
+  opacity: 0;
+  border: 2px solid #fff;
+  height: 14%;
+}
+.sliderTwo button:hover {
+  color: #2cccff;
+}
+.sliderTwo:hover .slick-next {
+  opacity: 1;
+}
+.sliderTwo:hover .slick-prev {
+  opacity: 1;
+}
+
+.sliderTwo__item {
+  width: 100%;
+}
+.sliderTwo__item img {
+  width: 100%;
+  height: 238px;
+}
+.sliderTwo__item .caption {
+  color: #fff;
+  padding: 0.2rem 0.4rem;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 0px;
+  display: none;
 }/*# sourceMappingURL=index.css.map */

@@ -1,7 +1,5 @@
 $font-footer: "Lato", sans-serif;
-body {
-  background-color: #1b1b1b;
-}
+$btn-slick: rgba(0, 0, 0, 0.3);
 html {
   font-size: 16px;
   a {
@@ -31,4 +29,55 @@ html {
   height: 3px;
   background: gray;
   left: 50%;
+}
+// căn giữa chữ ( rộng , cao)
+@mixin center-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+// style button slick slider
+@mixin style-button() {
+  height: 75%;
+  width: 2rem;
+  background: $btn-slick;
+  border-radius: 2rem;
+  &:hover {
+    color: #2cccff;
+  }
+}
+@mixin slick-prev {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  border: none;
+  z-index: 10;
+  color: #fff;
+  transform: translateY(-50%);
+}
+@mixin slick-next {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  border: none;
+  z-index: 10;
+  color: #fff;
+  transform: translateY(-50%);
+}
+@mixin style-dost {
+  position: absolute;
+  display: flex !important;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, -50%);
+  padding-left: unset;
+  z-index: 1;
+  button {
+    border: none;
+    outline: none;
+    font-size: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+  }
 }

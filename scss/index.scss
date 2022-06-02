@@ -1,3 +1,7 @@
+@import "../scss/main.scss";
+body {
+  background-color: #1b1b1b;
+}
 .SliderOne__Slider {
   background-color: gray;
   background-image: url(../images/img_body/slider_img/yoga-2.jpg);
@@ -93,26 +97,16 @@
 }
 // CSS BUTTON SLICK SLIDE
 .slick-prev {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
+  @include slick-prev;
   background: transparent;
-  border: none;
-  z-index: 10;
   opacity: 0;
-  color: #fff;
+  left: 0;
 }
 .slick-next {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
+  @include slick-next;
   background: transparent;
-  border: none;
-  z-index: 10;
   opacity: 0;
-  color: #fff;
+  right: 0;
 }
 .body__browse {
   .container {
@@ -170,17 +164,14 @@
       }
     }
   }
-  button {
-    height: 75%;
-    width: 2rem;
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 2rem;
-  }
   &:hover .slick-next {
     opacity: 1;
   }
   &:hover .slick-prev {
     opacity: 1;
+  }
+  button {
+    @include style-button;
   }
 }
 
@@ -199,6 +190,9 @@
       font-weight: 600;
     }
   }
+  button {
+    @include style-button;
+  }
 }
 .slider-latest {
   padding: 3rem 0rem;
@@ -208,6 +202,7 @@
     position: relative;
     padding: 1rem;
     .latest__img {
+      filter: brightness(80%);
       img {
         width: 100%;
         height: 300px;
@@ -241,12 +236,6 @@
       }
     }
   }
-  button {
-    height: 71%;
-    width: 2rem;
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 2rem;
-  }
   &:hover .slick-next {
     opacity: 1;
   }
@@ -261,26 +250,84 @@
     background-image: url(../images/img_body/yoga-4-1000x464.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 5rem 0rem;
+    padding: 16rem 0rem;
     .container {
       width: 50%;
       margin: auto;
       text-align: center;
-      h2 {
-        margin: 2rem 0rem;
-        color: #fff;
-        font-weight: 900;
+      .caption {
+        h2 {
+          margin: 2rem 0rem;
+          color: #fff;
+          font-weight: 900;
+        }
+        p {
+          font-size: 1.3rem;
+          color: #fff;
+          font-weight: 500;
+        }
       }
-      p {
-        font-size: 1.3rem;
-        color: #fff;
-        font-weight: 500;
+      .form {
+        margin-top: 3rem;
+        @include center-text;
+        input {
+          width: 60%;
+          border: unset;
+          height: 2.5rem;
+          border-radius: 2rem;
+          ::-moz-placeholder {
+            color: red;
+          }
+        }
+        .btn-email {
+          margin-left: 1rem;
+          width: 140px;
+          height: 45px;
+          background: rgb(12, 169, 231);
+          color: #fff;
+          font-weight: 600;
+          font-size: 1rem;
+          border-radius: 1rem;
+          @include center-text;
+        }
       }
     }
   }
 }
-.bg-fill {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+.sliderTwo {
+  button {
+    @include style-button;
+    background: transparent;
+    opacity: 0;
+    border: 2px solid #fff;
+    height: 14%;
+  }
+  &:hover .slick-next {
+    opacity: 1;
+  }
+  &:hover .slick-prev {
+    opacity: 1;
+  }
+}
+.sliderTwo__item {
+  width: 100%;
+  img {
+    width: 100%;
+    height: 238px;
+  }
+  .caption {
+    color: #fff;
+    padding: 0.2rem 0.4rem;
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 0px;
+    display: none;
+  }
+  // &:hover .caption {
+  //   height: 100%;
+  //   transform: translateY(-100%);
+  //   transition: all 0.5s ease;
+  //   overflow-y: auto;
+  //   overflow: hidden;
+  // }
 }
