@@ -1,6 +1,15 @@
+@import "../scss/main.scss";
 .header {
-  padding: 20px 0px;
+  padding: 20px 10px;
   display: flex;
+  height: 90px;
+  border: 1px solid black;
+}
+.header-left {
+  justify-content: left;
+}
+.header-right {
+  justify-content: right;
 }
 .header__logo {
   img {
@@ -11,16 +20,76 @@
 .header__element {
   display: flex;
   padding-left: unset;
+  @include center-text;
+  justify-content: space-around;
   width: 100%;
+  margin-bottom: unset;
 }
 .header__element--item {
   display: flex;
   justify-content: space-around;
+  font-weight: 600;
+  color: gray;
+  &:hover {
+    cursor: pointer;
+  }
+  .dropdown {
+    .dropdown-menu {
+      padding: unset;
+      .dropdown-item {
+        background: #fff;
+        padding: 0.7rem;
+        .unset-border {
+          border-top: unset;
+        }
+        ul {
+          li {
+            padding: 0.5rem 0rem;
+            border-top: 1px solid gray;
+          }
+          a {
+            color: gray;
+            &:hover {
+              color: black;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.header__user {
+  @include center-text;
+  margin: 0px 1rem;
   h6 {
-    text-transform: uppercase;
+    color: gray;
+    font-weight: 700;
   }
-  i {
-    padding-top: 2px;
-    padding-left: 5px;
+  &:hover {
+    cursor: pointer;
   }
+}
+.header__cart {
+  @include center-text;
+  margin: 0px 1rem;
+  h6 {
+    color: gray;
+    font-weight: 700;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+.modal-content {
+  .close {
+    @include btn-close;
+  }
+}
+.modal {
+  @include modal;
+}
+
+/* Modal Content */
+.modal-content {
+  @include modal-content;
 }

@@ -1,6 +1,6 @@
 @import "../scss/main.scss";
 body {
-  background-color: #1b1b1b;
+  background: #1b1b1b !important;
 }
 .SliderOne__Slider {
   background-color: gray;
@@ -107,6 +107,27 @@ body {
   background: transparent;
   opacity: 0;
   right: 0;
+}
+.body__featured {
+  .container {
+    position: relative;
+    margin: auto;
+    h4 {
+      z-index: 2;
+      background: #1b1b1b;
+      position: absolute;
+      color: #fff;
+      left: 44%;
+      top: -17px;
+      padding: 0px 20px;
+      font-weight: 600;
+    }
+  }
+}
+.slider-featured {
+  padding: 3rem 0rem;
+  border-top: 2px solid gray;
+  display: flex;
 }
 .body__browse {
   .container {
@@ -330,4 +351,7 @@ body {
   //   overflow-y: auto;
   //   overflow: hidden;
   // }
+}
+.slider-product {
+  padding: 3rem 0rem;
 }

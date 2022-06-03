@@ -27,61 +27,372 @@
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
     />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- IMPORT CSS  -->
     <link rel="stylesheet" href="../scss/main.css" />
     <link rel="stylesheet" href="../scss/header.css" />
   </head>
   <body>
-    <div class="header">
-      <div class="header__logo">
-        <img src="../images/img_header/logo.png" alt="" />
+    <div class="header row">
+      <div class="col-lg-7 header-left css-flex">
+        <div class="header__logo">
+          <img src="../images/img_header/logo.png" alt="" />
+        </div>
+        <ul class="header__element">
+          <div class="header__element--item">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <li class="header__element--item dropdown">
+            <div class="dropdown">
+              <div class="dropdown-toggle" data-bs-toggle="dropdown">DEMOS</div>
+              <ul class="dropdown-menu row">
+                <div class="col-lg-4 dropdown-item">
+                  <ul>
+                    <li class="unset-border">
+                      <p><b>SHOP DEMOS</b></p>
+                    </li>
+                    <li>
+                      <a href="#">Classic Shop</a>
+                    </li>
+                    <li>
+                      <a href="#">Simple Slider</a>
+                    </li>
+                    <li>
+                      <a href="#">Fullscreen Fashion</a>
+                    </li>
+                    <li>
+                      <a href="#">Video Cover</a>
+                    </li>
+                    <li>
+                      <a href="#">Slider Cover</a>
+                    </li>
+                    <li>
+                      <a href="#">Grid Style 1</a>
+                    </li>
+                    <li>
+                      <a href="#">Grid Style 2</a>
+                    </li>
+                    <li>
+                      <a href="#">Grid Style 3</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-4 dropdown-item">
+                  <ul>
+                    <li class="unset-border">
+                      <p><b>MORE SHOP DEMOS</b></p>
+                    </li>
+                    <li>
+                      <a href="#">Mega Shop</a>
+                    </li>
+                    <li>
+                      <a href="#">Cute Shop</a>
+                    </li>
+                    <li>
+                      <a href="#">Sport Shop</a>
+                    </li>
+                    <li>
+                      <a href="#">Vendor Shop</a>
+                    </li>
+                    <li>
+                      <a href="#">Parallax Shop</a>
+                    </li>
+                    <li>
+                      <a href="#">Big Sale</a>
+                    </li>
+                    <li>
+                      <a href="#">Sale CountDown</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-4 dropdown-item">
+                  <ul>
+                    <li class="unset-border">
+                      <p><b>BUSINESS DEMOS</b></p>
+                    </li>
+                    <li>
+                      <a href="#">Agency</a>
+                    </li>
+                    <li>
+                      <a href="#">Corporate</a>
+                    </li>
+                    <li>
+                      <a href="#">Freelancer</a>
+                    </li>
+                    <li>
+                      <a href="#">Explore</a>
+                    </li>
+                    <li>
+                      <a href="#">Lifestyle</a>
+                    </li>
+                  </ul>
+                </div>
+              </ul>
+            </div>
+          </li>
+          <li class="header__element--item dropdown">
+            <div class="dropdown">
+              <div class="dropdown-toggle" data-bs-toggle="dropdown">
+                FEATURES
+              </div>
+              <ul class="dropdown-menu row">
+                <li class="col-lg-4 dropdown-item">
+                  <ul>
+                    <li class="unset-border">
+                      <p><b>FEATURES</b></p>
+                    </li>
+                    <li>
+                      <a href="#">Core Features</a>
+                    </li>
+                    <li>
+                      <a href="#">What's New</a>
+                    </li>
+                    <li>
+                      <a href="#">UX Builder</a>
+                    </li>
+                    <li>
+                      <a href="#">Header Designer</a>
+                    </li>
+                    <li>
+                      <a href="#">Flastsome Studio</a>
+                    </li>
+                    <li>
+                      <a href="#">Fast Performance</a>
+                    </li>
+                    <li>
+                      <a href="#">Parallax Scrolling</a>
+                    </li>
+                    <li>
+                      <a href="#">Single Page Navigation</a>
+                    </li>
+                    <li>
+                      <a href="#">Sticky Sections</a>
+                    </li>
+                    <li>
+                      <a href="#">Getting Started</a>
+                    </li>
+                    <li>
+                      <a href="#">Footer Features</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="col-lg-4 dropdown-item">
+                  <ul>
+                    <li class="unset-border">
+                      <p><b>MORE</b></p>
+                    </li>
+                    <li>
+                      <a href="#">Blog Features</a>
+                    </li>
+                    <li>
+                      <a href="#">Portfolio Features</a>
+                    </li>
+                    <li>
+                      <a href="#">Blocks Element</a>
+                    </li>
+                    <li>
+                      <a href="#">Video & Docs</a>
+                    </li>
+                    <li>
+                      <a href="#">Customer Reviews</a>
+                    </li>
+                    <li>
+                      <a href="#">Elements Overview</a>
+                    </li>
+                    <li class="unset-border">
+                      <p><b>WOO COMMERCE</b></p>
+                      <li>
+                        <a href="#">Category Features</a>
+                      </li>
+                      <li>
+                        <a href="#">Product Features</a>
+                      </li>
+                      <li>
+                        <a href="#">Catalogue Mode</a>
+                      </li>
+                    </li>
+                  </ul>
+                </li>
+                <li class="col-lg-4 dropdown-item">
+                  <img src="../images/img_header/custom-image-1.jpg" alt="">
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="header__element--item dropdown">
+            <div class="dropdown">
+              <div class="dropdown-toggle" data-bs-toggle="dropdown">SHOP</div>
+              <ul class="dropdown-menu row">
+                <li class="col-lg-4 dropdown-item">
+                  <ul>
+                    <li class="unset-border">
+                      <p><b>CATEGORY PAGE</b></p>
+                    </li>
+                    <li>
+                      <a href="#">Overview</a>
+                    </li>
+                    <li>
+                      <a href="#">Off-Canvas Filtering</a>
+                    </li>
+                    <li>
+                      <a href="#">Full Width Layout</a>
+                    </li>
+                    <li>
+                      <a href="#">List layout</a>
+                    </li>
+                    <li>
+                      <a href="#">Masonry layout</a>
+                    </li>
+                    <li>
+                      <a href="#">Top Content</a>
+                    </li>
+                    <li>
+                      <a href="#">Transparent Header</a>
+                    </li>
+                    <li>
+                      <a href="#">Dark Style</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="col-lg-4 dropdown-item">
+                  <ul>
+                    <li class="unset-border">
+                      <p><b>PRODUCT PAGE</b></p>
+                    </li>
+                    <li>
+                      <a href="#">Overview</a>
+                    </li>
+                    <li>
+                      <a href="#">Left Column</a>
+                    </li>
+                    <li>
+                      <a href="#">Full Width Gallery</a>
+                    </li>
+                    <li>
+                      <a href="#">Vertical Gallery</a>
+                    </li>
+                    <li>
+                      <a href="#">Variations</a>
+                    </li>
+                    <li>
+                      <a href="#">Transparent Header</a>
+                    </li>
+                    <li>
+                      <a href="#">Affiliate</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="col-lg-4 dropdown-item">
+                  <ul>
+                    <li class="unset-border">
+                      <p><b>MORE..</b></p>
+                    </li>
+                    <li>
+                      <a href="#">Accordion Style</a>
+                    </li>
+                    <li>
+                      <a href="#">Section Style</a>
+                    </li>
+                    <li>
+                      <a href="#">Vertical Tabs</a>
+                    </li>
+                    <li>
+                      <a href="#">Normal Tabs</a>
+                    </li>
+                    <li>
+                      <a href="#">Dark Style</a>
+                    </li>
+                    <li>
+                      <a href="#">Image Zoom</a>
+                    </li>
+                    <li>
+                      <a href="#">Catalogue Mode</a>
+                    </li>
+                    <li>
+                      <a href="#">Product Examples</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="header__element--item dropdown">
+            <div class="dropdown">
+              <div class="dropdown-toggle" data-bs-toggle="dropdown">PAGES</div>
+              <ul class="dropdown-menu">
+                <li class="dropdown-item">
+                  <ul>
+                    <li class="unset-border">
+                      <a href="#">Portfolio</a>
+                    </li>
+                    <li>
+                      <a href="#">About</a>
+                    </li>
+                    <li>
+                      <a href="#">Contact</a>
+                    </li>
+                    <li>
+                      <a href="#">Our Stores</a>
+                    </li>
+                    <li>
+                      <a href="#">Maintenance</a>
+                    </li>
+                    <li>
+                      <a href="#">Page layouts</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="header__element--item">BLOG</li>
+          <li class="header__element--item">ELEMENTS</li>
+        </ul>
       </div>
-      <ul class="header__element">
-        <li class="header__element--item">
-          <h6>demos</h6>
-          <i class="fa-solid fa-angle-down"></i>
-        </li>
-        <li class="header__element--item">
-          <h6>features</h6>
-          <i class="fa-solid fa-angle-down"></i>
-        </li>
-        <li class="header__element--item">
-          <h6>shop</h6>
-          <i class="fa-solid fa-angle-down"></i>
-        </li>
-        <li class="header__element--item">
-          <h6>pages</h6>
-          <i class="fa-solid fa-angle-down"></i>
-        </li>
-        <li class="header__element--item">
-          <h6>blog</h6>
-          <i class="fa-solid fa-angle-down"></i>
-        </li>
-        <li class="header__element--item">
-          <h6>elements</h6>
-          <i class="fa-solid fa-angle-down"></i>
-        </li>
-      </ul>
-      <div class="header__user">
-        <h6>login</h6>
+      <div class="col-lg-5 header-right css-flex">
+        <div class="header__user" id="loginBtn">
+          <h6>LOGIN</h6>
+        </div>
+        <div class="header__cart">
+          <h6>CART / $0,00</h6>
+        </div>
       </div>
     </div>
+    <!-- MODAL LOGIN  -->
+    <div id="loginModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close"><i class="fa-solid fa-xmark"></i></span>
+        <p>Some text in the Modal..</p>
+      </div>
+    </div>
+    <script>
+      // Get the modal
+      var modal = document.getElementById("loginModal");
+
+      // Get the button that opens the modal
+      var btn = document.getElementById("loginBtn");
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks the button, open the modal
+      btn.onclick = function () {
+        modal.style.display = "block";
+      };
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
   </body>
 </html>

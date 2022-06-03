@@ -2,8 +2,11 @@ html {
   font-size: 16px;
 }
 html a {
-  color: #fff;
+  color: black;
   text-decoration: none;
+}
+html ul {
+  padding-left: unset;
 }
 html li {
   list-style: none;
@@ -31,8 +34,55 @@ html h6 {
   left: 50%;
 }
 
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 body {
-  background-color: #1b1b1b;
+  background: #1b1b1b !important;
 }
 
 .SliderOne__Slider {
@@ -156,6 +206,27 @@ body {
   background: transparent;
   opacity: 0;
   right: 0;
+}
+
+.body__featured .container {
+  position: relative;
+  margin: auto;
+}
+.body__featured .container h4 {
+  z-index: 2;
+  background: #1b1b1b;
+  position: absolute;
+  color: #fff;
+  left: 44%;
+  top: -17px;
+  padding: 0px 20px;
+  font-weight: 600;
+}
+
+.slider-featured {
+  padding: 3rem 0rem;
+  border-top: 2px solid gray;
+  display: flex;
 }
 
 .body__browse .container {
@@ -389,4 +460,8 @@ body {
   background-color: rgba(0, 0, 0, 0.4);
   height: 0px;
   display: none;
+}
+
+.slider-product {
+  padding: 3rem 0rem;
 }/*# sourceMappingURL=index.css.map */
