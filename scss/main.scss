@@ -22,6 +22,7 @@ html {
     margin-bottom: unset;
   }
 }
+// CLASS
 .css-flex {
   display: flex;
 }
@@ -33,6 +34,7 @@ html {
   background: gray;
   left: 50%;
 }
+// MIXIN
 // căn giữa ( rộng , cao)
 @mixin center-text {
   display: flex;
@@ -106,6 +108,7 @@ html {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -120,4 +123,10 @@ html {
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
+}
+@mixin style-button {
+  margin-left: 1.5rem;
+  width: max-content;
+  border-radius: 1rem;
+  padding: 10px 20px;
 }

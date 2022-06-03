@@ -34,337 +34,399 @@
     <link rel="stylesheet" href="../scss/header.css" />
   </head>
   <body>
-    <div class="header row">
-      <div class="col-lg-7 header-left css-flex">
+    <div class="header row Top_bar" id="Top_bar">
+      <div class="col-lg-8 header-left css-flex">
         <div class="header__logo">
-          <img src="../images/img_header/logo.png" alt="" />
+          <img src="../images/img_header/logo-light.png" alt="" />
         </div>
         <ul class="header__element">
-          <div class="header__element--item">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </div>
-          <li class="header__element--item dropdown">
-            <div class="dropdown">
-              <div class="dropdown-toggle" data-bs-toggle="dropdown">DEMOS</div>
-              <ul class="dropdown-menu row">
-                <div class="col-lg-4 dropdown-item">
-                  <ul>
-                    <li class="unset-border">
-                      <p><b>SHOP DEMOS</b></p>
-                    </li>
-                    <li>
-                      <a href="#">Classic Shop</a>
-                    </li>
-                    <li>
-                      <a href="#">Simple Slider</a>
-                    </li>
-                    <li>
-                      <a href="#">Fullscreen Fashion</a>
-                    </li>
-                    <li>
-                      <a href="#">Video Cover</a>
-                    </li>
-                    <li>
-                      <a href="#">Slider Cover</a>
-                    </li>
-                    <li>
-                      <a href="#">Grid Style 1</a>
-                    </li>
-                    <li>
-                      <a href="#">Grid Style 2</a>
-                    </li>
-                    <li>
-                      <a href="#">Grid Style 3</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="col-lg-4 dropdown-item">
-                  <ul>
-                    <li class="unset-border">
-                      <p><b>MORE SHOP DEMOS</b></p>
-                    </li>
-                    <li>
-                      <a href="#">Mega Shop</a>
-                    </li>
-                    <li>
-                      <a href="#">Cute Shop</a>
-                    </li>
-                    <li>
-                      <a href="#">Sport Shop</a>
-                    </li>
-                    <li>
-                      <a href="#">Vendor Shop</a>
-                    </li>
-                    <li>
-                      <a href="#">Parallax Shop</a>
-                    </li>
-                    <li>
-                      <a href="#">Big Sale</a>
-                    </li>
-                    <li>
-                      <a href="#">Sale CountDown</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="col-lg-4 dropdown-item">
-                  <ul>
-                    <li class="unset-border">
-                      <p><b>BUSINESS DEMOS</b></p>
-                    </li>
-                    <li>
-                      <a href="#">Agency</a>
-                    </li>
-                    <li>
-                      <a href="#">Corporate</a>
-                    </li>
-                    <li>
-                      <a href="#">Freelancer</a>
-                    </li>
-                    <li>
-                      <a href="#">Explore</a>
-                    </li>
-                    <li>
-                      <a href="#">Lifestyle</a>
-                    </li>
-                  </ul>
-                </div>
-              </ul>
+          <li class="dropdown cl-element">
+            <div class="dropbtn" style="width: 59px">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="dropdown-hidden"></div>
+            <div class="dropdown-content header-search">
+              <input type="email" placeholder="Search ..." />
             </div>
           </li>
-          <li class="header__element--item dropdown">
-            <div class="dropdown">
-              <div class="dropdown-toggle" data-bs-toggle="dropdown">
-                FEATURES
+          <li class="dropdown">
+            <div class="dropbtn cl-element">
+              DEMOS
+              <i style="margin-left: 5px" class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="dropdown-hidden"></div>
+            <div class="dropdown-content">
+              <div class="row">
+                <ul class="col-4">
+                  <li class="unset-border">
+                    <p><b>SHOP DEMOS</b></p>
+                  </li>
+                  <li>
+                    <a href="#">Classic Shop</a>
+                  </li>
+                  <li>
+                    <a href="#">Simple Slider</a>
+                  </li>
+                  <li>
+                    <a href="#">Fullscreen Fashion</a>
+                  </li>
+                  <li>
+                    <a href="#">Video Cover</a>
+                  </li>
+                  <li>
+                    <a href="#">Slider Cover</a>
+                  </li>
+                  <li>
+                    <a href="#">Grid Style 1 </a>
+                  </li>
+                  <li>
+                    <a href="#">Grid Style 2 </a>
+                  </li>
+                  <li>
+                    <a href="#">Grid Style 3</a>
+                  </li>
+                </ul>
+                <ul class="col-4">
+                  <li class="unset-border">
+                    <p><b>MORE SHOP DEMOS</b></p>
+                  </li>
+                  <li>
+                    <a href="#"> Mega Shop </a>
+                  </li>
+                  <li>
+                    <a href="#">Cute Shop</a>
+                  </li>
+                  <li>
+                    <a href="#">Sport Shop</a>
+                  </li>
+                  <li>
+                    <a href="#">Vendor Shop</a>
+                  </li>
+                  <li>
+                    <a href="#">Parallax Shop</a>
+                  </li>
+                  <li>
+                    <a href="#">Big Sale</a>
+                  </li>
+                  <li>
+                    <a href="#">Sale Countdown</a>
+                  </li>
+                </ul>
+                <ul class="col-4">
+                  <li class="unset-border">
+                    <p><b>BUSINESS DEMOS</b></p>
+                  </li>
+                  <li>
+                    <a href="#">Agency</a>
+                  </li>
+                  <li>
+                    <a href="#">Corporate</a>
+                  </li>
+                  <li>
+                    <a href="#">Freelancer</a>
+                  </li>
+                  <li>
+                    <a href="#">Explore</a>
+                  </li>
+                  <li>
+                    <a href="#">Lifestyle</a>
+                  </li>
+                </ul>
               </div>
-              <ul class="dropdown-menu row">
-                <li class="col-lg-4 dropdown-item">
-                  <ul>
-                    <li class="unset-border">
-                      <p><b>FEATURES</b></p>
-                    </li>
-                    <li>
-                      <a href="#">Core Features</a>
-                    </li>
-                    <li>
-                      <a href="#">What's New</a>
-                    </li>
-                    <li>
-                      <a href="#">UX Builder</a>
-                    </li>
-                    <li>
-                      <a href="#">Header Designer</a>
-                    </li>
-                    <li>
-                      <a href="#">Flastsome Studio</a>
-                    </li>
-                    <li>
-                      <a href="#">Fast Performance</a>
-                    </li>
-                    <li>
-                      <a href="#">Parallax Scrolling</a>
-                    </li>
-                    <li>
-                      <a href="#">Single Page Navigation</a>
-                    </li>
-                    <li>
-                      <a href="#">Sticky Sections</a>
-                    </li>
-                    <li>
-                      <a href="#">Getting Started</a>
-                    </li>
-                    <li>
-                      <a href="#">Footer Features</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="col-lg-4 dropdown-item">
-                  <ul>
-                    <li class="unset-border">
-                      <p><b>MORE</b></p>
-                    </li>
-                    <li>
-                      <a href="#">Blog Features</a>
-                    </li>
-                    <li>
-                      <a href="#">Portfolio Features</a>
-                    </li>
-                    <li>
-                      <a href="#">Blocks Element</a>
-                    </li>
-                    <li>
-                      <a href="#">Video & Docs</a>
-                    </li>
-                    <li>
-                      <a href="#">Customer Reviews</a>
-                    </li>
-                    <li>
-                      <a href="#">Elements Overview</a>
-                    </li>
-                    <li class="unset-border">
-                      <p><b>WOO COMMERCE</b></p>
-                      <li>
-                        <a href="#">Category Features</a>
-                      </li>
-                      <li>
-                        <a href="#">Product Features</a>
-                      </li>
-                      <li>
-                        <a href="#">Catalogue Mode</a>
-                      </li>
-                    </li>
-                  </ul>
-                </li>
-                <li class="col-lg-4 dropdown-item">
-                  <img src="../images/img_header/custom-image-1.jpg" alt="">
-                </li>
-              </ul>
             </div>
           </li>
-          <li class="header__element--item dropdown">
-            <div class="dropdown">
-              <div class="dropdown-toggle" data-bs-toggle="dropdown">SHOP</div>
-              <ul class="dropdown-menu row">
-                <li class="col-lg-4 dropdown-item">
-                  <ul>
-                    <li class="unset-border">
-                      <p><b>CATEGORY PAGE</b></p>
-                    </li>
-                    <li>
-                      <a href="#">Overview</a>
-                    </li>
-                    <li>
-                      <a href="#">Off-Canvas Filtering</a>
-                    </li>
-                    <li>
-                      <a href="#">Full Width Layout</a>
-                    </li>
-                    <li>
-                      <a href="#">List layout</a>
-                    </li>
-                    <li>
-                      <a href="#">Masonry layout</a>
-                    </li>
-                    <li>
-                      <a href="#">Top Content</a>
-                    </li>
-                    <li>
-                      <a href="#">Transparent Header</a>
-                    </li>
-                    <li>
-                      <a href="#">Dark Style</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="col-lg-4 dropdown-item">
-                  <ul>
-                    <li class="unset-border">
-                      <p><b>PRODUCT PAGE</b></p>
-                    </li>
-                    <li>
-                      <a href="#">Overview</a>
-                    </li>
-                    <li>
-                      <a href="#">Left Column</a>
-                    </li>
-                    <li>
-                      <a href="#">Full Width Gallery</a>
-                    </li>
-                    <li>
-                      <a href="#">Vertical Gallery</a>
-                    </li>
-                    <li>
-                      <a href="#">Variations</a>
-                    </li>
-                    <li>
-                      <a href="#">Transparent Header</a>
-                    </li>
-                    <li>
-                      <a href="#">Affiliate</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="col-lg-4 dropdown-item">
-                  <ul>
-                    <li class="unset-border">
-                      <p><b>MORE..</b></p>
-                    </li>
-                    <li>
-                      <a href="#">Accordion Style</a>
-                    </li>
-                    <li>
-                      <a href="#">Section Style</a>
-                    </li>
-                    <li>
-                      <a href="#">Vertical Tabs</a>
-                    </li>
-                    <li>
-                      <a href="#">Normal Tabs</a>
-                    </li>
-                    <li>
-                      <a href="#">Dark Style</a>
-                    </li>
-                    <li>
-                      <a href="#">Image Zoom</a>
-                    </li>
-                    <li>
-                      <a href="#">Catalogue Mode</a>
-                    </li>
-                    <li>
-                      <a href="#">Product Examples</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
+          <li class="dropdown">
+            <div class="dropbtn cl-element">
+              FEATURES
+              <i style="margin-left: 5px" class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="dropdown-hidden"></div>
+            <div class="dropdown-content">
+              <div class="row">
+                <ul class="col-4">
+                  <li class="unset-border">
+                    <p><b>FEATURES</b></p>
+                  </li>
+                  <li>
+                    <a href="#">Core Features</a>
+                  </li>
+                  <li>
+                    <a href="#">What's New</a>
+                  </li>
+                  <li>
+                    <a href="#">UX Builder</a>
+                  </li>
+                  <li>
+                    <a href="#">Header Designer</a>
+                  </li>
+                  <li>
+                    <a href="#">Flatsome Studio</a>
+                  </li>
+                  <li>
+                    <a href="#">Fast Performance</a>
+                  </li>
+                  <li>
+                    <a href="#">Parallax Scrolling</a>
+                  </li>
+                  <li>
+                    <a href="#">Single Page Navigation</a>
+                  </li>
+                  <li>
+                    <a href="#">Sticky Section</a>
+                  </li>
+                  <li>
+                    <a href="#">Getting Started</a>
+                  </li>
+                  <li>
+                    <a href="#">Footer Features</a>
+                  </li>
+                </ul>
+                <ul class="col-4">
+                  <li class="unset-border">
+                    <p><b>MORE</b></p>
+                  </li>
+                  <li>
+                    <a href="#">Blog Features</a>
+                  </li>
+                  <li>
+                    <a href="#">Portfolio Features</a>
+                  </li>
+                  <li>
+                    <a href="#">Block Element</a>
+                  </li>
+                  <li>
+                    <a href="#">Video & Docs</a>
+                  </li>
+                  <li>
+                    <a href="#">Customer Reviews</a>
+                  </li>
+                  <li>
+                    <a href="#">Element Overview</a>
+                  </li>
+                  <li class="unset-border">
+                    <p><b>WOO COMMERCE</b></p>
+                  </li>
+                  <li>
+                    <a href="#">Category Features</a>
+                  </li>
+                  <li>
+                    <a href="#">Product Features</a>
+                  </li>
+                  <li>
+                    <a href="#">Catague Mode</a>
+                  </li>
+                </ul>
+                <ul class="col-4 dropdown-img">
+                  <img src="../images/img_header/custom-image-1.jpg" alt="" />
+                </ul>
+              </div>
             </div>
           </li>
-          <li class="header__element--item dropdown">
-            <div class="dropdown">
-              <div class="dropdown-toggle" data-bs-toggle="dropdown">PAGES</div>
-              <ul class="dropdown-menu">
-                <li class="dropdown-item">
-                  <ul>
-                    <li class="unset-border">
-                      <a href="#">Portfolio</a>
-                    </li>
-                    <li>
-                      <a href="#">About</a>
-                    </li>
-                    <li>
-                      <a href="#">Contact</a>
-                    </li>
-                    <li>
-                      <a href="#">Our Stores</a>
-                    </li>
-                    <li>
-                      <a href="#">Maintenance</a>
-                    </li>
-                    <li>
-                      <a href="#">Page layouts</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
+          <li class="dropdown">
+            <div class="dropbtn cl-element">
+              SHOP
+              <i style="margin-left: 5px" class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="dropdown-hidden"></div>
+            <div class="dropdown-content">
+              <div class="row">
+                <ul class="col-4">
+                  <li class="unset-border">
+                    <p><b>CATEGORY PAGE</b></p>
+                  </li>
+                  <li>
+                    <a href="#">Overview</a>
+                  </li>
+                  <li>
+                    <a href="#">Off Canvas Filtering</a>
+                  </li>
+                  <li>
+                    <a href="#">Full Width Layout</a>
+                  </li>
+                  <li>
+                    <a href="#">List Layout</a>
+                  </li>
+                  <li>
+                    <a href="#">Masonry Layout</a>
+                  </li>
+                  <li>
+                    <a href="#">Top Content</a>
+                  </li>
+                  <li>
+                    <a href="#">Transparent Header</a>
+                  </li>
+                  <li>
+                    <a href="#">Dark Style</a>
+                  </li>
+                </ul>
+                <ul class="col-4">
+                  <li class="unset-border">
+                    <p><b>PRODUCT PAGE</b></p>
+                  </li>
+                  <li>
+                    <a href="#">Overview</a>
+                  </li>
+                  <li>
+                    <a href="#">Left Colum</a>
+                  </li>
+                  <li>
+                    <a href="#">Right Column</a>
+                  </li>
+                  <li>
+                    <a href="#">Full Width Gallery</a>
+                  </li>
+                  <li>
+                    <a href="#">Vertical Gallery</a>
+                  </li>
+                  <li>
+                    <a href="#">Variations</a>
+                  </li>
+                  <li>
+                    <a href="#">Transparent Header</a>
+                  </li>
+                  <li>
+                    <a href="#">Affiliate</a>
+                  </li>
+                </ul>
+                <ul class="col-4">
+                  <li class="unset-border">
+                    <p><b>MORE..</b></p>
+                  </li>
+                  <li>
+                    <a href="#">Accordion Style</a>
+                  </li>
+                  <li>
+                    <a href="#">Section Style</a>
+                  </li>
+                  <li>
+                    <a href="#">Vertical Tabs</a>
+                  </li>
+                  <li>
+                    <a href="#">Normal Tabs</a>
+                  </li>
+                  <li>
+                    <a href="#">Dark Style</a>
+                  </li>
+                  <li>
+                    <a href="#">Images Zoom</a>
+                  </li>
+                  <li>
+                    <a href="#">Catalogue Mode</a>
+                  </li>
+                  <li>
+                    <a href="#">Product Examples</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </li>
-          <li class="header__element--item">BLOG</li>
-          <li class="header__element--item">ELEMENTS</li>
+          <li class="dropdown">
+            <div class="dropbtn cl-element">
+              PAGES
+              <i style="margin-left: 5px" class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="dropdown-hidden"></div>
+            <div class="dropdown-content">
+              <div class="row">
+                <ul class="col-4">
+                  <li>
+                    <a href="#">Portfolio</a>
+                  </li>
+                  <li>
+                    <a href="#">About</a>
+                  </li>
+                  <li>
+                    <a href="#">Contact</a>
+                  </li>
+                  <li>
+                    <a href="#">Our Stores</a>
+                  </li>
+                  <li>
+                    <a href="#">Maintenance</a>
+                  </li>
+                  <li>
+                    <a href="#">Page layouts</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <h6 class="cl-element">BLOG</h6>
+          <h6 class="cl-element">ELEMENTS</h6>
         </ul>
       </div>
-      <div class="col-lg-5 header-right css-flex">
+      <div class="col-lg-4 header-right css-flex">
         <div class="header__user" id="loginBtn">
-          <h6>LOGIN</h6>
+          <h6 class="cl-element">LOGIN</h6>
         </div>
-        <div class="header__cart">
-          <h6>CART / $0,00</h6>
+        <div class="dropdown header__cart">
+          <div class="dropbtn">
+            <h6 class="cl-element">CART / $0,00</h6>
+            <div class="header__cart-cricle"></div>
+            <div class="header__cart-img">
+              <p>0</p>
+            </div>
+          </div>
+          <div class="dropdown-hidden"></div>
+          <div class="dropdown-content">
+            <p>No product in the cart</p>
+          </div>
         </div>
       </div>
     </div>
     <!-- MODAL LOGIN  -->
-    <div id="loginModal" class="modal">
-      <!-- Modal content -->
-      <div class="modal-content">
-        <span class="close"><i class="fa-solid fa-xmark"></i></span>
-        <p>Some text in the Modal..</p>
+    <div class="modal-header" style="padding: unset">
+      <div id="loginModal" class="modal">
+        <div class="modal-content">
+          <span class="close"><i class="fa-solid fa-xmark"></i></span>
+          <div class="row">
+            <div class="col-6 col-md-6 col-lg-6">
+              <div class="modal-content__login">
+                <h5>LOGIN</h5>
+                <div class="form-header">
+                  <b>Username or email address *</b>
+                  <input type="email" />
+                </div>
+                <div class="form-header">
+                  <b>Password *</b>
+                  <input type="text" />
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Remember me
+                  </label>
+                </div>
+                <div class="button-header">LOGIN</div>
+                <a href="#">Lost your password?</a>
+              </div>
+            </div>
+            <div class="col-6 col-md-6 col-lg-6">
+              <div class="modal-content__register">
+                <h5>REGISTER</h5>
+                <div class="form-header">
+                  <b>Email address *</b>
+                  <input type="email" />
+                </div>
+                <div class="form-header">
+                  <b>Password *</b>
+                  <input type="text" />
+                </div>
+                <p>
+                  Your personal data will be used to support your experience
+                  throughout this website, to manage access to your account, and
+                  for other purposes described in our privacy policy.
+                </p>
+                <div class="button-header">REGISTER</div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <script>
@@ -394,5 +456,6 @@
         }
       };
     </script>
+    <script src="../js/sticky-navbar.js"></script>
   </body>
 </html>
