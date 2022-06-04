@@ -1,1 +1,215 @@
+@import "./main.scss";
+.container {
+  margin: auto;
+  margin-top: 100px;
+}
+.jersey__content {
+  .jersey-content__img {
+    .carousel-inner {
+      .carousel-item {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .jersey-content__text {
+    position: relative;
+    .content-text__link {
+      display: flex;
+      flex-direction: row;
+      h6 {
+        color: gray;
+        font-weight: 400;
+        &:hover {
+          color: black;
+        }
+      }
+    }
+    h1 {
+      font-weight: 600;
+      color: gray;
+    }
+    .btn-0 {
+      padding-left: 0.5rem;
+      width: 10%;
+      margin: 0.5rem 0rem;
+      left: 0%;
+    }
+    b {
+      margin: 1rem 0rem;
+      color: black;
+      font-weight: 500;
+      font-size: 1rem;
+    }
+    p {
+      padding: 0.5rem 0rem;
+      color: gray;
+    }
+    .css-flex {
+      padding: 2rem 0rem;
+      justify-content: left;
+    }
+    .number {
+      width: 100px;
+      height: 46px;
+      border: 1px solid gray;
+      border-radius: 1rem;
+      @include center-text;
+      p {
+        margin: 0px 0.5rem;
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: black;
+      }
+    }
+    .add {
+      @include style-button;
+      background: #1e90ff;
+      color: #fff;
+      font-weight: 600;
+      @include center-text;
+      &:hover {
+        background: #004183;
+      }
+    }
+    .jersey__social {
+      justify-content: left;
+      li {
+        background: #fff;
+        margin: 0px 5px;
+        i {
+          color: gray;
+        }
+      }
+    }
+  }
+}
+.jersey__comment {
+  margin: 2rem 0rem;
+  border: 2px solid #e0e0e0;
+  border-left: unset;
+  border-right: unset;
+  .tab {
+    overflow: hidden;
+    button {
+      background-color: inherit;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      transition: 0.3s;
+      font-size: 17px;
+      padding: 0.5rem;
+      .btn-0 {
+        background: #1e90ff;
+        left: 5%;
+        top: -18%;
+        width: 90%;
+        height: 5px;
+        display: none;
+      }
+    }
+  }
 
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    .btn-0 {
+      display: block;
+    }
+  }
+  /* Create an active/current tablink class */
+  .tab button.active {
+    color: #303030;
+    .btn-0 {
+      display: block;
+    }
+  }
+
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 2rem;
+  }
+}
+.tablinks {
+  position: relative;
+  color: gray;
+  font-weight: 700;
+}
+.description {
+  p {
+    padding: 0.5rem;
+    color: gray;
+  }
+}
+.additional {
+  color: gray;
+  h5 {
+    font-weight: 700;
+  }
+}
+.review {
+  h5 {
+    color: #303030;
+    font-weight: 700;
+  }
+  p {
+    color: gray;
+  }
+  .padding-bt {
+    padding-bottom: 5rem;
+  }
+  .form {
+    border: 2px solid #1e90ff;
+    padding: 1rem;
+    p {
+      color: black;
+      font-weight: 600;
+    }
+    .form__star {
+      padding: 0.5rem 0rem;
+      .star-item {
+        padding: 0rem 0.5rem;
+        .fa-star {
+          font-size: 0.8rem;
+          color: gray;
+        }
+        &:hover {
+          .fa-star {
+            color: rgb(245, 255, 58);
+          }
+        }
+      }
+    }
+    .form__comment {
+      padding: 0.5rem 0rem;
+      width: 100%;
+      .size {
+        margin: 0.5rem 0rem;
+        width: 100%;
+        height: 13rem;
+        border: 2px solid gray;
+        box-sizing: border-box;
+      }
+    }
+    .form__user {
+      padding: 0.5rem 0rem;
+      input {
+        margin: 0.5rem 0rem 1rem 0rem;
+        width: 100%;
+        height: 3rem;
+      }
+    }
+    .form__check {
+      padding: 0.5rem 0rem;
+    }
+    .form__submit {
+      padding: 0.5rem 0rem;
+      @include style-button;
+      background: #1e90ff;
+      color: #fff;
+      font-weight: 700;
+    }
+  }
+}
