@@ -130,6 +130,9 @@
   border: unset;
   .modal {
     @include modal;
+    margin-top: 100px;
+    display: none;
+    z-index: 10;
   }
   .modal-content {
     @include modal-content;
@@ -137,7 +140,7 @@
     padding: 1rem;
     .close {
       @include btn-close;
-      display: none;
+      display: block;
     }
     .modal-content__login {
       border-right: 1px solid gray;

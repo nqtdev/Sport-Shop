@@ -128,7 +128,6 @@ body {
   padding: 3rem 0rem;
   border-top: 2px solid gray;
   display: flex;
-
   .product-item {
     position: relative;
     padding: 1rem;
@@ -161,12 +160,10 @@ body {
     }
     &__modal {
       .modal-click {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include center-text;
         position: absolute;
-        bottom: 18%;
-        width: 93%;
+        bottom: 19%;
+        width: 90%;
         height: 2.1rem;
         background: #1e90ff;
         color: #fff;
@@ -216,15 +213,61 @@ body {
       @include style-button;
     }
   }
+  .slick-prev {
+    @include slick-prev;
+    top: 40%;
+    width: max-content;
+    padding: 0.3rem 0.7rem;
+    background: #fff;
+    overflow: hidden;
+    border: 2px solid gray;
+    border-radius: 45%;
+    left: 4%;
+    opacity: 0;
+    transform: translateX(0.3rem);
+    i {
+      color: gray;
+      font-size: 1.5rem;
+    }
+    &:hover {
+      background: #1e90ff;
+      i {
+        color: #fff;
+      }
+    }
+  }
+  .slick-next {
+    @include slick-next;
+    top: 40%;
+    transform: translateX(0.3rem);
+    width: max-content;
+    padding: 0.3rem 0.7rem;
+    background: #fff;
+    overflow: hidden;
+    border: 2px solid gray;
+    border-radius: 45%;
+    right: 4%;
+    opacity: 0;
+    i {
+      color: gray;
+      font-size: 1.5rem;
+    }
+    &:hover {
+      background: #1e90ff;
+      i {
+        color: #fff;
+      }
+    }
+  }
   &:hover .slick-prev {
     opacity: 1;
-    transform: translateX(-1.5rem);
-    transition: all 0.5s ease-in-out;
+    transform: translateX(-1rem);
+    transition: all 0.7s ease-in-out;
   }
   &:hover .slick-next {
     opacity: 1;
-    transform: translateX(1.5rem);
-    transition: all 0.5s ease-in-out;
+    transform: translateX(1rem);
+    transition: all 0.7s ease-in-out;
   }
 }
 
@@ -451,6 +494,107 @@ body {
   //   overflow: hidden;
   // }
 }
-.slider-product {
-  padding: 3rem 0rem;
+// .featured-modal {
+//   padding: 3rem 0rem;
+// }
+// STYLE MODAL CONTENT
+.featured-modal {
+  .modal {
+    @include modal;
+    @include center-text;
+    display: none;
+    z-index: 100;
+  }
+  .modal-content {
+    @include modal-content;
+    padding: 1rem;
+    width: 65%;
+    .close {
+      @include btn-close;
+    }
+    .modal-body {
+      padding: unset;
+      .modal-body__slider {
+        .modal-body__img {
+          img {
+            width: 100%;
+          }
+        }
+        button {
+          @include style-button;
+        }
+        .slick-next {
+          @include slick-next;
+        }
+        .slick-prev {
+          @include slick-prev;
+        }
+      }
+      .slick-dots {
+        @include style-dost;
+        background: transparent;
+        button {
+          padding: unset;
+        }
+        li {
+          margin: 0px 5px;
+        }
+        .slick-active {
+          button {
+            background-color: black;
+          }
+        }
+      }
+      .modal-body__content {
+        position: relative;
+        h1 {
+          font-weight: 600;
+          color: gray;
+        }
+        .btn-0 {
+          padding-left: 0.5rem;
+          width: 10%;
+          margin: 0.5rem 0rem;
+          left: 0%;
+        }
+        b {
+          margin: 1rem 0rem;
+          color: black;
+          font-weight: 500;
+          font-size: 1rem;
+        }
+        p {
+          padding: 0.5rem 0rem;
+          color: gray;
+        }
+        .css-flex {
+          padding: 2rem 0rem;
+          justify-content: left;
+        }
+        .number {
+          width: 100px;
+          height: 46px;
+          border: 1px solid gray;
+          border-radius: 1rem;
+          @include center-text;
+          p {
+            margin: 0px 0.5rem;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: black;
+          }
+        }
+        .add {
+          @include style-button;
+          background: #1e90ff;
+          color: #fff;
+          font-weight: 600;
+          @include center-text;
+          &:hover {
+            background: #004183;
+          }
+        }
+      }
+    }
+  }
 }
