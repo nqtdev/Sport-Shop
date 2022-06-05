@@ -118,6 +118,7 @@ html h6 {
   width: max-content;
   border-radius: 1rem;
   padding: 10px 20px;
+  background: gray;
 }
 .slider-product:hover .slick-prev {
   opacity: 1;
@@ -257,6 +258,7 @@ html h6 {
   width: max-content;
   border-radius: 1rem;
   padding: 10px 20px;
+  background: gray;
 }
 .product-modal .modal-content .modal-body .modal-body__slider .slick-next {
   position: absolute;
@@ -349,6 +351,7 @@ html h6 {
   width: max-content;
   border-radius: 1rem;
   padding: 10px 20px;
+  background: gray;
   background: #1e90ff;
   color: #fff;
   font-weight: 600;

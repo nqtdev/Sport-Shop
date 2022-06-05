@@ -253,6 +253,7 @@ html h6 {
   width: max-content;
   border-radius: 1rem;
   padding: 10px 20px;
+  background: gray;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -289,6 +290,7 @@ html h6 {
   width: max-content;
   border-radius: 1rem;
   padding: 10px 20px;
+  background: gray;
   display: flex;
   justify-content: center;
   align-items: center;
