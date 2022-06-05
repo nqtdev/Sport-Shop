@@ -297,7 +297,10 @@ html h6 {
   border-radius: 50%;
 }
 .product-modal .modal-content .modal-body .slick-dots li {
-  margin: 0px 10px;
+  margin: 0px 5px;
+}
+.product-modal .modal-content .modal-body .slick-dots li button {
+  padding: unset;
 }
 .product-modal .modal-content .modal-body .slick-dots .slick-active button {
   background-color: #fff;

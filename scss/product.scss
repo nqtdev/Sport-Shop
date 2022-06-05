@@ -179,7 +179,10 @@
         @include style-dost;
         background: transparent;
         li {
-          margin: 0px 10px;
+          margin: 0px 5px;
+          button {
+            padding: unset;
+          }
         }
         .slick-active {
           button {

@@ -1,24 +1,22 @@
 @import "./main.scss";
 .container {
-  margin: auto;
   margin-top: 100px;
 }
+.ahihi {
+  width: 100%;
+  height: 5rem;
+  background: black;
+}
 .jersey__content {
-  .jersey-content__img {
-    .carousel-inner {
-      .carousel-item {
-        img {
-          width: 100%;
-        }
-      }
-    }
-  }
+  // .jersey-content__img {
+  // }
   .jersey-content__text {
     position: relative;
     .content-text__link {
       display: flex;
       flex-direction: row;
       h6 {
+        margin: 0rem 0.4rem;
         color: gray;
         font-weight: 400;
         &:hover {
@@ -36,11 +34,13 @@
       margin: 0.5rem 0rem;
       left: 0%;
     }
-    b {
+    p {
       margin: 1rem 0rem;
-      color: black;
-      font-weight: 500;
-      font-size: 1rem;
+      b {
+        color: black;
+        font-weight: 700;
+        font-size: 1.3rem;
+      }
     }
     p {
       padding: 0.5rem 0rem;
@@ -87,9 +87,8 @@
 }
 .jersey__comment {
   margin: 2rem 0rem;
-  border: 2px solid #e0e0e0;
-  border-left: unset;
-  border-right: unset;
+  border-top: 2px solid #e0e0e0;
+
   .tab {
     overflow: hidden;
     button {
@@ -211,5 +210,13 @@
       color: #fff;
       font-weight: 700;
     }
+  }
+}
+.jersey__related {
+  border-top: 2px solid gray;
+  h5 {
+    font-weight: 700;
+    color: gray;
+    margin: 1rem 0rem;
   }
 }
