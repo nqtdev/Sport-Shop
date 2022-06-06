@@ -34,12 +34,60 @@ html h6 {
   left: 50%;
 }
 
+.border-bt {
+  border-bottom: 1px solid gray;
+}
+
+.border-l {
+  border-left: 1px solid gray;
+}
+
 .container {
-  margin-top: 1rem;
+  margin: auto;
+  margin-top: 4rem;
 }
 
 .ahihi {
   width: 100%;
   height: 5rem;
   background: black;
+}
+
+.left__title {
+  margin-bottom: 2rem;
+}
+.left__title h5 {
+  color: gray;
+  font-weight: 500;
+  margin: 0rem 0.5rem;
+}
+.left__title h5:hover {
+  color: black;
+}
+
+.left__browse {
+  position: relative;
+}
+.left__browse h6 {
+  color: #777777;
+  font-weight: 700;
+}
+.left__browse .btn-0 {
+  left: 0%;
+  width: 5%;
+  color: #e5e5e5;
+}
+.left__browse .accordion-item {
+  border: none;
+}
+.left__browse .accordion-item a {
+  padding: 0px;
+}
+.left__browse .accordion-item .accordion-button:not(.collapse) {
+  color: black;
+  background: #fff;
+  box-shadow: none;
+}
+.left__browse .browse-content .browse-content__item {
+  padding: 0.5rem 0rem;
 }/*# sourceMappingURL=clothing.css.map */
